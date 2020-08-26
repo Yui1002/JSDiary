@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>勉強日記</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Diary</h1>
+    </header>
+    <div class="calendar">
+        <table>
+            <thead>
+                <tr>
+                    <th id="prev">&laquo;</th>
+                    <th colspan="5" id="title">2020/08</th>
+                    <th id="next">&raquo;</th>
+                </tr>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td id="today" colspan="7">Today</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <form action="/" method="POST">
+        <textarea name="diary" id="writeSpace" class="diary" name="content"></textarea>
+        <button class="addBtn" id="submitBtn">送信</button>
+        <button class="addBtn" id="showBtn">一覧表示</button>
+    </form>
+    <table id="testDiaryTbl">
+        <th>Date</th>
+        <th>Content</th>
+    </table>
+    <script src="main.js"></script>
+</body>
+</html>
